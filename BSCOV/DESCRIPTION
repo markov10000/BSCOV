@@ -6,7 +6,7 @@ Author: Yu-Ning Li, Degui Li, Piotr Fryzlewicz
 Maintainer: Yu-Ning Li <283638003@qq.com>
 Description: Detection of Multiple Structural Breaks in Large Covariance Matrices using approximate factor model
     Detection of Multiple Structural Breaks in common components and idiosyncratic components
-License: li
+License: GPL-2
 Encoding: UTF-8
 LazyData: true
 Imports: Rcpp (>= 0.12.4), foreach, parallel, iterators, fields, rARPACK,
