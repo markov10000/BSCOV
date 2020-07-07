@@ -22,7 +22,7 @@ SSIC <- function(x,mat,SSIC.slack=c(1/2,1/2),SIC.const=NULL){
     T <- ncol(x)
 
 if(is.null(SIC.const)) {
-    SIC.const <- min((T)^0.5,log(T)^4.01)
+    SIC.const <- T^0.5 #min(T^0.5,log(T)^4.01)
 }
 if(is.null(mat)) {
 		w.cpt1$cpt.ic<- as.numeric()
