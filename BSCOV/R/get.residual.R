@@ -1,10 +1,12 @@
 get.residual<-
-function(gfm0=gfm0,common.est.cps=common.est.cps,refact=1,bn.op = 2){
+function(gfm0=gfm0, r=NULL,common.est.cps=common.est.cps, refact=1, bn.op = 2){
 	x<-gfm0$norm.x	
 	T <- ncol(x)
 	no.comm.cpt <- length(common.est.cps)
 	common.est.cps <- c(0,common.est.cps,T)
-	q.hat <- gfm0$q.hat
+	if (is.null(r)) 
+	  q.hat <- gfm0$q.hat
+	else q.hat <- r # given NoF 
 
     if(no.comm.cpt&&refact==1){
         hat.vep <- x*0   
